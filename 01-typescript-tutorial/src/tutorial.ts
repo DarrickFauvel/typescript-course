@@ -1,17 +1,3 @@
-// CHALLENGE: Functions - Using Objects as Function Parameters
-function processData(
-  input: string | number,
-  config: { reverse: boolean } = { reverse: false }
-) {
-  if (typeof input === "number") {
-    return input * input
-  } else {
-    return config.reverse
-      ? input.toUpperCase().split("").reverse().join("")
-      : input.toUpperCase()
-  }
-}
+import challenge29Functions2 from "./challenges/29-functions-2"
 
-console.log(processData(20))
-console.log(processData("hello"))
-console.log(processData("hello", { reverse: true }))
+// challenge29Functions2()
